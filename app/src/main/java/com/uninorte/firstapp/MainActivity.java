@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             TextView Mytext = (TextView) findViewById(R.id.LastGrade);
 
             if (Gr4 <= 0) {
-                Mytext.setText("Felicidades, no necesitas nota");
+                Mytext.setText("Felicidades,no necesitas nota");
 
             } else if (Gr4 <= 5) {
                 Mytext.setText("Necesitas una nota de: " + Float.toString(Gr4));

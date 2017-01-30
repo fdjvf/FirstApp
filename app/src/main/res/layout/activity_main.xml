@@ -11,51 +11,63 @@
     tools:context="com.uninorte.firstapp.MainActivity">
 
     <EditText
+        android:id="@+id/Grade2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:layout_marginTop="24dp"
-        android:id="@+id/Grade2"
-        android:layout_below="@+id/Grade1"
         android:layout_alignLeft="@+id/Grade1"
         android:layout_alignStart="@+id/Grade1"
-        android:hint="Nota 2" />
+        android:layout_below="@+id/Grade1"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nota 2"
+        android:inputType="numberDecimal" />
 
     <EditText
+        android:id="@+id/Grade3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="27dp"
-        android:id="@+id/Grade3"
-        android:layout_below="@+id/Grade2"
         android:layout_alignLeft="@+id/Grade2"
         android:layout_alignStart="@+id/Grade2"
+        android:layout_below="@+id/Grade2"
+        android:layout_marginTop="27dp"
+        android:ems="10"
         android:hint="Nota 3"
         android:inputType="numberDecimal" />
 
     <Button
-        android:text="Calcular"
+        android:id="@+id/MinGrade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Grade3"
         android:layout_alignLeft="@+id/Grade3"
         android:layout_alignStart="@+id/Grade3"
+        android:layout_below="@+id/Grade3"
         android:layout_marginTop="26dp"
-        android:id="@+id/MinGrade"
-        android:onClick="GetMinGrade" />
+        android:onClick="GetMinGrade"
+        android:text="Calcular" />
 
     <EditText
+        android:id="@+id/Grade1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="136dp"
-        android:id="@+id/Grade1"
-        android:inputType="numberDecimal"
-        android:hint="Nota1"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Nota1"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/LastGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MinGrade"
+        android:layout_alignStart="@+id/MinGrade"
+        android:layout_below="@+id/MinGrade"
+        android:layout_marginTop="43dp"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="24sp" />
 </RelativeLayout>
